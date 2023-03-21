@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 00:12:04
- * @LastEditTime: 2023-03-22 00:16:36
+ * @LastEditTime: 2023-03-22 00:23:06
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\config\paths.js
@@ -62,9 +62,9 @@ const resolveModule = (resolveFn, filePath) => {
 module.exports = {
   dotenv: resolveApp('.env'),
   appPath: resolveApp('.'),
-  appBuild: resolveApp(buildPath),
+  appBuild: resolveApp(buildPath),// 再将github pages => settings=> Build and deployment=> Branch 的部署地址改一下(/docs)
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('index.html'),
+  appHtml: resolveApp('index.html'),// 模板html位置
   appIndexJs: resolveModule(resolveApp, 'src/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
