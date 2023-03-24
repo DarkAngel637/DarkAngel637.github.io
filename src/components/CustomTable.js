@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-03-25 02:19:54
+ * @LastEditTime: 2023-03-25 02:32:08
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\components\CustomTable.js
@@ -39,7 +39,6 @@ export default class CustomTable extends Component {
             nine: false,
             ten: false,
             eleven: false,
-            twelve: false,
         }
     }
     // componentDidMount() {
