@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-03-24 22:52:41
+ * @LastEditTime: 2023-03-24 23:33:10
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\components\CustomTable.js
@@ -23,7 +23,7 @@ import react from "../assets/cover/react.png"
 import typescript from "../assets/cover/typescript.png"
 import egg from "../assets/cover/egg.png"
 import prictice from "../assets/cover/prictice.png"
-import styles from "./index.less";
+import styles from "./index.css";
 export default class CustomTable extends Component {
     constructor(props) {
         super(props)
