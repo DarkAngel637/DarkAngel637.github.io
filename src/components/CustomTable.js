@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-03-25 00:41:38
+ * @LastEditTime: 2023-03-25 02:19:54
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\components\CustomTable.js
@@ -23,7 +23,7 @@ import react from "../assets/cover/react.png"
 import typescript from "../assets/cover/typescript.png"
 import egg from "../assets/cover/egg.png"
 import prictice from "../assets/cover/prictice.png"
-// import "./index.css";
+import "./index.css";
 export default class CustomTable extends Component {
     constructor(props) {
         super(props)
@@ -81,16 +81,10 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image preview={{ visible: false }} src={html} width={'40%'} height={200} /></div>}
                         >
-                            {/* <Image
-                                preview={{ visible: false }}
-                                width={200}
-                                src={html}
-                                onClick={() => this.onClick('one', true)}
-                                title='html'
-                            /> */}
+                          
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.one, onVisibleChange: (vis) => this.handleVisibleChange("one", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -116,16 +110,10 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image preview={{ visible: false }} src={css} width={'40%'} height={200} /></div>}
                         >
-                            {/* <Image
-                                preview={{ visible: false }}
-                                width={200}
-                                src={css}
-                                onClick={() => this.onClick('two', true)}
-                                title='css'
-                            /> */}
+                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.two, onVisibleChange: (vis) => this.handleVisibleChange("two", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -151,16 +139,10 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image preview={{ visible: false }} src={js} width={'40%'} height={200} /></div>}
                         >
-                            {/* <Image
-                                preview={{ visible: false }}
-                                width={200}
-                                src={js}
-                                onClick={() => this.onClick('three', true)}
-                                title='js'
-                            /> */}
+                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.three, onVisibleChange: (vis) => this.handleVisibleChange("three", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -188,7 +170,7 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image preview={{ visible: false }} src={requirejs} width={'40%'} height={200} /></div>}
 
                         >
@@ -217,7 +199,7 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image preview={{ visible: false }} src={mobile} width={'40%'} height={200} /></div>}
                         >
 
@@ -277,16 +259,10 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image src={vue} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
-                            {/* <Image
-                                preview={{ visible: false }}
-                                width={200}
-                                src={vue}
-                                onClick={() => this.onClick('seven', true)}
-                                title='vue'
-                            /> */}
+                          
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.seven, onVisibleChange: (vis) => this.handleVisibleChange("seven", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -311,7 +287,7 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image src={react} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
 
@@ -339,7 +315,7 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image src={typescript} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
 
@@ -369,16 +345,10 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image src={egg} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
-                            {/* <Image
-                                preview={{ visible: false }}
-                                width={200}
-                                src={egg}
-                                onClick={() => this.onClick('ten', true)}
-                                title='nodejs pro'
-                            /> */}
+                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.ten, onVisibleChange: (vis) => this.handleVisibleChange("ten", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -403,16 +373,10 @@ export default class CustomTable extends Component {
                                     display: 'flex',
                                     justifyContent: 'space-around'
                                 }}
-                            // className='coverContainer'
+                            className='coverContainer'
                             ><Image src={prictice} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
-                            {/* <Image
-                                preview={{ visible: false }}
-                                width={200}
-                                src={prictice}
-                                onClick={() => this.onClick('eleven', true)}
-                                title='prictice'
-                            /> */}
+                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.eleven, onVisibleChange: (vis) => this.handleVisibleChange("eleven", vis) }}>
                                     {noteArray.map((item, index) => {
