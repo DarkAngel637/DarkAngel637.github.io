@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-03-25 02:32:08
+ * @LastEditTime: 2023-03-25 03:29:53
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\components\CustomTable.js
@@ -83,7 +83,6 @@ export default class CustomTable extends Component {
                             className='coverContainer'
                             ><Image preview={{ visible: false }} src={html} width={'40%'} height={200} /></div>}
                         >
-                          
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.one, onVisibleChange: (vis) => this.handleVisibleChange("one", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -112,7 +111,6 @@ export default class CustomTable extends Component {
                             className='coverContainer'
                             ><Image preview={{ visible: false }} src={css} width={'40%'} height={200} /></div>}
                         >
-                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.two, onVisibleChange: (vis) => this.handleVisibleChange("two", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -125,7 +123,6 @@ export default class CustomTable extends Component {
                             </div>
                             <Meta title="css" description="css note" />
                         </Card>
-
                     </Col>
                     <Col span={8}>
                         <Card
@@ -141,7 +138,6 @@ export default class CustomTable extends Component {
                             className='coverContainer'
                             ><Image preview={{ visible: false }} src={js} width={'40%'} height={200} /></div>}
                         >
-                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.three, onVisibleChange: (vis) => this.handleVisibleChange("three", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -157,7 +153,6 @@ export default class CustomTable extends Component {
                     </Col>
                 </Row>
                 <Row gutter={[24, 24]} >
-
                     <Col span={8}>
                         <Card
                             hoverable
@@ -171,7 +166,6 @@ export default class CustomTable extends Component {
                                 }}
                             className='coverContainer'
                             ><Image preview={{ visible: false }} src={requirejs} width={'40%'} height={200} /></div>}
-
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.four, onVisibleChange: (vis) => this.handleVisibleChange("four", vis) }}>
@@ -185,7 +179,6 @@ export default class CustomTable extends Component {
                             </div>
                             <Meta title="requirejs" description="requirejs note" />
                         </Card>
-
                     </Col>
                     <Col span={8}>
                         <Card
@@ -201,7 +194,6 @@ export default class CustomTable extends Component {
                             className='coverContainer'
                             ><Image preview={{ visible: false }} src={mobile} width={'40%'} height={200} /></div>}
                         >
-
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.five, onVisibleChange: (vis) => this.handleVisibleChange("five", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -231,7 +223,6 @@ export default class CustomTable extends Component {
                                 </div>
                             }
                         >
-
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.six, onVisibleChange: (vis) => this.handleVisibleChange("six", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -261,7 +252,6 @@ export default class CustomTable extends Component {
                             className='coverContainer'
                             ><Image src={vue} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
-                          
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.seven, onVisibleChange: (vis) => this.handleVisibleChange("seven", vis) }}>
                                     {noteArray.map((item, index) => {
@@ -375,7 +365,6 @@ export default class CustomTable extends Component {
                             className='coverContainer'
                             ><Image src={prictice} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
-                           
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.eleven, onVisibleChange: (vis) => this.handleVisibleChange("eleven", vis) }}>
                                     {noteArray.map((item, index) => {
