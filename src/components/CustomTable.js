@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-03-25 00:01:49
+ * @LastEditTime: 2023-03-25 00:41:38
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\components\CustomTable.js
@@ -23,7 +23,7 @@ import react from "../assets/cover/react.png"
 import typescript from "../assets/cover/typescript.png"
 import egg from "../assets/cover/egg.png"
 import prictice from "../assets/cover/prictice.png"
-import "./index.css";
+// import "./index.css";
 export default class CustomTable extends Component {
     constructor(props) {
         super(props)
@@ -69,13 +69,20 @@ export default class CustomTable extends Component {
                         </Card>
                     </Col>
                 </Row>
-                <Row gutter={[24,24]} >
+                <Row gutter={[24, 24]} >
                     <Col span={8}>
                         <Card
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('one', true)}
-                            cover={<div className='coverContainer'><Image preview={{ visible: false }} src={html} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image preview={{ visible: false }} src={html} width={'40%'} height={200} /></div>}
                         >
                             {/* <Image
                                 preview={{ visible: false }}
@@ -103,7 +110,14 @@ export default class CustomTable extends Component {
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('two', true)}
-                            cover={<div className='coverContainer'><Image preview={{ visible: false }} src={css} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image preview={{ visible: false }} src={css} width={'40%'} height={200} /></div>}
                         >
                             {/* <Image
                                 preview={{ visible: false }}
@@ -131,7 +145,14 @@ export default class CustomTable extends Component {
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('three', true)}
-                            cover={<div className='coverContainer'><Image preview={{ visible: false }} src={js} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image preview={{ visible: false }} src={js} width={'40%'} height={200} /></div>}
                         >
                             {/* <Image
                                 preview={{ visible: false }}
@@ -154,14 +175,21 @@ export default class CustomTable extends Component {
                         </Card>
                     </Col>
                 </Row>
-                <Row gutter={[24,24]} >
+                <Row gutter={[24, 24]} >
 
                     <Col span={8}>
                         <Card
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('four', true)}
-                            cover={<div className='coverContainer'><Image preview={{ visible: false }} src={requirejs} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image preview={{ visible: false }} src={requirejs} width={'40%'} height={200} /></div>}
 
                         >
                             <div style={{ display: 'none' }}>
@@ -183,7 +211,14 @@ export default class CustomTable extends Component {
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('five', true)}
-                            cover={<div className='coverContainer\'><Image preview={{ visible: false }} src={mobile} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image preview={{ visible: false }} src={mobile} width={'40%'} height={200} /></div>}
                         >
 
                             <div style={{ display: 'none' }}>
@@ -205,7 +240,12 @@ export default class CustomTable extends Component {
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('six', true)}
                             cover={
-                                <div className='coverContainer'>
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'space-around'
+                                    }}                        >
                                     <Image src={nodejs} preview={{ visible: false }} width={'40%'} height={200} />
                                 </div>
                             }
@@ -225,13 +265,20 @@ export default class CustomTable extends Component {
                         </Card>
                     </Col>
                 </Row>
-                <Row gutter={[24,24]} >
+                <Row gutter={[24, 24]} >
                     <Col span={8}>
                         <Card
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('seven', true)}
-                            cover={<div className='coverContainer'><Image src={vue} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image src={vue} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
                             {/* <Image
                                 preview={{ visible: false }}
@@ -258,7 +305,14 @@ export default class CustomTable extends Component {
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('eight', true)}
-                            cover={<div className='coverContainer'><Image src={react} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image src={react} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
 
                             <div style={{ display: 'none' }}>
@@ -279,7 +333,14 @@ export default class CustomTable extends Component {
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('nine', true)}
-                            cover={<div className='coverContainer'><Image src={typescript} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image src={typescript} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
 
                             <div style={{ display: 'none' }}>
@@ -296,13 +357,20 @@ export default class CustomTable extends Component {
                         </Card>
                     </Col>
                 </Row>
-                <Row gutter={[24,24]} >
+                <Row gutter={[24, 24]} >
                     <Col span={8}>
                         <Card
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('ten', true)}
-                            cover={<div className='coverContainer'><Image src={egg} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image src={egg} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
                             {/* <Image
                                 preview={{ visible: false }}
@@ -329,7 +397,14 @@ export default class CustomTable extends Component {
                             hoverable
                             style={{ height: '20vh' }}
                             onClick={() => this.onClick('eleven', true)}
-                            cover={<div className='coverContainer'><Image src={prictice} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            cover={<div
+                                style={{
+                                    width: '100%',
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            // className='coverContainer'
+                            ><Image src={prictice} preview={{ visible: false }} width={'40%'} height={200} /></div>}
                         >
                             {/* <Image
                                 preview={{ visible: false }}
