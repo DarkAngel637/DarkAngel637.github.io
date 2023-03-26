@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-21 22:39:14
- * @LastEditTime: 2023-03-23 01:19:46
+ * @LastEditTime: 2023-03-25 04:30:45
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\App.js
@@ -9,7 +9,7 @@
 import logo from './logo.svg';
 import './App.css';
 import CustomTable from './components/CustomTable';
-
+import { Watermark } from 'antd';
 function App() {
   return (
     <div className="App">
@@ -27,7 +27,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <Watermark content='darkangel637'>
       <CustomTable/>
+      </Watermark>
     </div>
   );
 }

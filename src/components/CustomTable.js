@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-03-25 03:55:48
+ * @LastEditTime: 2023-03-25 04:38:33
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\components\CustomTable.js
@@ -81,7 +81,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image preview={{ visible: false }} src={html} width={'40%'} height={200} /></div>}
+                            ><Image loading="lazy" preview={{ visible: false }} src={html} width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.one, onVisibleChange: (vis) => this.handleVisibleChange("one", vis) }}>
@@ -109,7 +109,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image preview={{ visible: false }} src={css} width={'40%'} height={200} /></div>}
+                            ><Image preview={{ visible: false }} loading="lazy" src={css} width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.two, onVisibleChange: (vis) => this.handleVisibleChange("two", vis) }}>
@@ -136,7 +136,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image preview={{ visible: false }} src={js} width={'40%'} height={200} /></div>}
+                            ><Image preview={{ visible: false }} loading="lazy" src={js} width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.three, onVisibleChange: (vis) => this.handleVisibleChange("three", vis) }}>
@@ -165,7 +165,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image preview={{ visible: false }} src={requirejs} width={'40%'} height={200} /></div>}
+                            ><Image preview={{ visible: false }} loading="lazy" src={requirejs} width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.four, onVisibleChange: (vis) => this.handleVisibleChange("four", vis) }}>
@@ -192,7 +192,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image preview={{ visible: false }} src={mobile} width={'40%'} height={200} /></div>}
+                            ><Image preview={{ visible: false }} loading="lazy" src={mobile} width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.five, onVisibleChange: (vis) => this.handleVisibleChange("five", vis) }}>
@@ -219,7 +219,7 @@ export default class CustomTable extends Component {
                                         display: 'flex',
                                         justifyContent: 'space-around'
                                     }}                        >
-                                    <Image src={nodejs} preview={{ visible: false }} width={'40%'} height={200} />
+                                    <Image src={nodejs} preview={{ visible: false }} loading="lazy" width={'40%'} height={200} />
                                 </div>
                             }
                         >
@@ -250,7 +250,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image src={vue} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            ><Image src={vue} preview={{ visible: false }} loading="lazy" width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.seven, onVisibleChange: (vis) => this.handleVisibleChange("seven", vis) }}>
@@ -277,7 +277,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image src={react} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            ><Image src={react} preview={{ visible: false }} loading="lazy" width={'40%'} height={200} /></div>}
                         >
 
                             <div style={{ display: 'none' }}>
@@ -305,7 +305,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image src={typescript} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            ><Image src={typescript} preview={{ visible: false }} loading="lazy" width={'40%'} height={200} /></div>}
                         >
 
                             <div style={{ display: 'none' }}>
@@ -335,7 +335,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image src={egg} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            ><Image src={egg} preview={{ visible: false }} loading="lazy" width={'40%'} height={200} /></div>}
                         >
                            
                             <div style={{ display: 'none' }}>
@@ -363,7 +363,7 @@ export default class CustomTable extends Component {
                                     justifyContent: 'space-around'
                                 }}
                             className='coverContainer'
-                            ><Image src={prictice} preview={{ visible: false }} width={'40%'} height={200} /></div>}
+                            ><Image src={prictice} preview={{ visible: false }} loading="lazy" width={'40%'} height={200} /></div>}
                         >
                             <div style={{ display: 'none' }}>
                                 <Image.PreviewGroup preview={{ visible: this.state.eleven, onVisibleChange: (vis) => this.handleVisibleChange("eleven", vis) }}>
