@@ -25,28 +25,32 @@ export async function getInitialState(): Promise<{
   loading?: boolean;
   fetchUserInfo?: () => Promise<API.CurrentUser | undefined>;
 }> {
-  const fetchUserInfo = async () => {
-    try {
-      const msg = await queryCurrentUser();
-      return msg.data;
-    } catch (error) {
-      history.push(loginPath);
-    }
-    return undefined;
-  };
+  // const fetchUserInfo = async () => {
+  //   try {
+  // const msg = await queryCurrentUser();
+  //     return msg.data;
+  //   } catch (error) {
+  //     history.push(loginPath);
+  //   }
+  //   return undefined;
+  // };
   // 如果是登录页面，不执行
-  if (history.location.pathname !== loginPath) {
-    const currentUser = await fetchUserInfo();
-    return {
-      fetchUserInfo,
-      currentUser,
-      settings: {},
-    };
-  }
-  return {
-    fetchUserInfo,
-    settings: {},
-  };
+  // if (history.location.pathname !== loginPath) {
+  //   const currentUser = await fetchUserInfo();
+  // return {
+  //   // fetchUserInfo,
+  //   currentUser: {
+  //     name: localStorage.getItem('username') ?? '访客 ',
+  //     avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
+  //   },
+  //   settings: {},
+  // };
+  // }
+  // return {
+  //   fetchUserInfo,
+  //   settings: {},
+  // };
+  return {};
 }
 
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
@@ -61,7 +65,8 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
     onPageChange: () => {
       const { location } = history;
       // 如果没有登录，重定向到 login
-      if (!initialState?.currentUser && location.pathname !== loginPath) {
+      // if (!initialState?.currentUser && location.pathname !== loginPath) {
+      if (!localStorage.getItem('username') && location.pathname !== loginPath) {
         history.push(loginPath);
       }
     },

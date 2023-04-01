@@ -51,9 +51,9 @@ const LoginMessage: React.FC<{
 );
 
 const Login: React.FC = () => {
-  const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
+  // const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
   const [type, setType] = useState<string>('account');
-  const { initialState, setInitialState } = useModel('@@initialState');
+  // const { initialState, setInitialState } = useModel('@@initialState');
 
   const intl = useIntl();
 
@@ -71,7 +71,7 @@ const Login: React.FC = () => {
     console.log(values, 'values');
     try {
       // 登录
-      const msg = await login({ ...values, type });
+      // const msg = await login({ ...values, type });
       // if (msg.status === 'ok') {
       if (
         accessedUser.find(
@@ -84,17 +84,19 @@ const Login: React.FC = () => {
         });
         message.success(defaultLoginSuccessMessage);
         localStorage.setItem('username', values.username as string); // ------
-        await fetchUserInfo();
+        // await fetchUserInfo();
         /** 此方法会跳转到 redirect 参数所在的位置 */
         if (!history) return;
+        console.log(history);
         const { query } = history.location;
         const { redirect } = query as { redirect: string };
-        history.push(redirect || '/');
+        // history.push(redirect || '/');
+        history.push(redirect || '/welcome');
         return;
       }
-      console.log(msg);
+      // console.log(msg);
       // 如果失败去设置用户错误信息
-      setUserLoginState(msg);
+      // setUserLoginState(msg);
     } catch (error) {
       const defaultLoginFailureMessage = intl.formatMessage({
         id: 'pages.login.failure',
@@ -106,7 +108,7 @@ const Login: React.FC = () => {
 
   // ----------------------登录-------------------------------
 
-  const { status, type: loginType } = userLoginState;
+  // const { status, type: loginType } = userLoginState;
 
   return (
     <div className={styles.container}>
@@ -152,15 +154,15 @@ const Login: React.FC = () => {
             /> */}
           </Tabs>
 
-          {status === 'error' && loginType === 'account' && (
+          {/* {status === 'error' && loginType === 'account' && (
             <LoginMessage
               content={intl.formatMessage({
                 id: 'pages.login.accountLogin.errorMessage',
                 defaultMessage: '账户或密码错误(admin/ant.design)',
               })}
             />
-          )}
-          {type === 'account' && (
+          )} */}
+          {/* {type === 'account' && (
             <>
               <ProFormText
                 name="username"
@@ -170,7 +172,7 @@ const Login: React.FC = () => {
                 }}
                 placeholder={intl.formatMessage({
                   id: 'pages.login.username.placeholder',
-                  defaultMessage: '用户名: admin or user',
+                  defaultMessage: '自己姓名',
                 })}
                 rules={[
                   {
@@ -192,7 +194,7 @@ const Login: React.FC = () => {
                 }}
                 placeholder={intl.formatMessage({
                   id: 'pages.login.password.placeholder',
-                  defaultMessage: '密码: ant.design',
+                  defaultMessage: '姓名拼音',
                 })}
                 rules={[
                   {
@@ -207,8 +209,51 @@ const Login: React.FC = () => {
                 ]}
               />
             </>
-          )}
-
+          )} */}
+          <ProFormText
+            name="username"
+            fieldProps={{
+              size: 'large',
+              prefix: <UserOutlined className={styles.prefixIcon} />,
+            }}
+            placeholder={intl.formatMessage({
+              id: 'pages.login.username.placeholder',
+              defaultMessage: '自己姓名',
+            })}
+            rules={[
+              {
+                required: true,
+                message: (
+                  <FormattedMessage
+                    id="pages.login.username.required"
+                    defaultMessage="请输入用户名!"
+                  />
+                ),
+              },
+            ]}
+          />
+          <ProFormText.Password
+            name="password"
+            fieldProps={{
+              size: 'large',
+              prefix: <LockOutlined className={styles.prefixIcon} />,
+            }}
+            placeholder={intl.formatMessage({
+              id: 'pages.login.password.placeholder',
+              defaultMessage: '姓名拼音',
+            })}
+            rules={[
+              {
+                required: true,
+                message: (
+                  <FormattedMessage
+                    id="pages.login.password.required"
+                    defaultMessage="请输入密码！"
+                  />
+                ),
+              },
+            ]}
+          />
           {/* {status === 'error' && loginType === 'mobile' && <LoginMessage content="验证码错误" />} */}
           {/* {type === 'mobile' && (
             <>
