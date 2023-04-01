@@ -1,3 +1,11 @@
+/*
+ * @Author: Dark Angel
+ * @Date: 2023-03-31 16:36:20
+ * @LastEditTime: 2023-04-01 19:02:44
+ * @LastEditors: Dark Angel
+ * @Description: 干就完事了!
+ * @FilePath: \DarkAngel637.github.io\config\config.ts
+ */
 // https://umijs.org/config/
 import { defineConfig } from 'umi';
 import { join } from 'path';
@@ -49,6 +57,7 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
+  outputPath: 'docs',
   // Fast Refresh 热更新
   fastRefresh: {},
   openAPI: [

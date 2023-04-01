@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-04-01 18:39:46
+ * @LastEditTime: 2023-04-01 18:58:14
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\Mynote\index.tsx
@@ -12,6 +12,8 @@ import React, { Component } from 'react';
 import data from '../Mynote/assets/index';
 
 import { Row, Col, Image, Card } from 'antd';
+
+import { PageContainer } from '@ant-design/pro-layout';
 
 import html from '../Mynote/assets/cover/html.png';
 import css from '../Mynote/assets/cover/css.jpg';
@@ -61,14 +63,14 @@ export default class CustomTable extends Component {
     const noteArray = Object.entries(data);
     const { Meta } = Card;
     return (
-      <>
-        <Row gutter={24}>
+      <PageContainer>
+        {/* <Row gutter={24}>
           <Col span={24}>
             <Card>
               <h1>note list</h1>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
         <Row gutter={[24, 24]}>
           <Col span={8}>
             <Card
@@ -528,7 +530,7 @@ export default class CustomTable extends Component {
             </Card>
           </Col>
         </Row>
-      </>
+      </PageContainer>
     );
   }
 }
