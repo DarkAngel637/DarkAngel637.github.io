@@ -16,7 +16,26 @@ import { getFakeCaptcha } from '@/services/ant-design-pro/login';
 
 import styles from './index.less';
 
-import accessedUser from './user';
+// import accessedUser from './user';
+
+const accessedUser = [
+  {
+    username: '郭俊豪',
+    password: 'guojunhao',
+  },
+  {
+    username: '王亚东',
+    password: 'wangyadong',
+  },
+  {
+    username: '于磊',
+    password: 'yulei',
+  },
+  {
+    username: '杨海光',
+    password: 'yanghaiguang',
+  },
+];
 
 const LoginMessage: React.FC<{
   content: string;
