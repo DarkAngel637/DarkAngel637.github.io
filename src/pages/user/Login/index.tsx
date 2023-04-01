@@ -69,41 +69,41 @@ const Login: React.FC = () => {
   // -----------------登录---------------------------
   const handleSubmit = async (values: API.LoginParams) => {
     console.log(values, 'values');
-    try {
-      // 登录
-      // const msg = await login({ ...values, type });
-      // if (msg.status === 'ok') {
-      if (
-        accessedUser.find(
-          (item) => item.username === values.username && item.password === values.password,
-        ) // ------
-      ) {
-        const defaultLoginSuccessMessage = intl.formatMessage({
-          id: 'pages.login.success',
-          defaultMessage: '登录成功！',
-        });
-        message.success(defaultLoginSuccessMessage);
-        localStorage.setItem('username', values.username as string); // ------
-        // await fetchUserInfo();
-        /** 此方法会跳转到 redirect 参数所在的位置 */
-        if (!history) return;
-        console.log(history);
-        const { query } = history.location;
-        const { redirect } = query as { redirect: string };
-        // history.push(redirect || '/');
-        history.push(redirect || '/welcome');
-        return;
-      }
-      // console.log(msg);
-      // 如果失败去设置用户错误信息
-      // setUserLoginState(msg);
-    } catch (error) {
-      const defaultLoginFailureMessage = intl.formatMessage({
-        id: 'pages.login.failure',
-        defaultMessage: '登录失败，请重试！',
+    // try {
+    // 登录
+    // const msg = await login({ ...values, type });
+    // if (msg.status === 'ok') {
+    if (
+      accessedUser.find(
+        (item) => item.username === values.username && item.password === values.password,
+      ) // ------
+    ) {
+      const defaultLoginSuccessMessage = intl.formatMessage({
+        id: 'pages.login.success',
+        defaultMessage: '登录成功！',
       });
-      message.error(defaultLoginFailureMessage);
+      message.success(defaultLoginSuccessMessage);
+      localStorage.setItem('username', values.username as string); // ------
+      // await fetchUserInfo();
+      /** 此方法会跳转到 redirect 参数所在的位置 */
+      if (!history) return;
+      console.log(history);
+      const { query } = history.location;
+      const { redirect } = query as { redirect: string };
+      // history.push(redirect || '/');
+      history.push(redirect || '/welcome');
+      return;
     }
+    // console.log(msg);
+    // 如果失败去设置用户错误信息
+    // setUserLoginState(msg);
+    // } catch (error) {
+    //   const defaultLoginFailureMessage = intl.formatMessage({
+    //     id: 'pages.login.failure',
+    //     defaultMessage: '登录失败，请重试！',
+    //   });
+    //   message.error(defaultLoginFailureMessage);
+    // }
   };
 
   // ----------------------登录-------------------------------
@@ -336,7 +336,7 @@ const Login: React.FC = () => {
               />
             </>
           )} */}
-          <div
+          {/* <div
             style={{
               marginBottom: 24,
             }}
@@ -351,7 +351,7 @@ const Login: React.FC = () => {
             >
               <FormattedMessage id="pages.login.forgotPassword" defaultMessage="忘记密码" />
             </a>
-          </div>
+          </div> */}
         </LoginForm>
       </div>
       <Footer />
