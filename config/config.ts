@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-31 16:36:20
- * @LastEditTime: 2023-04-02 21:13:18
+ * @LastEditTime: 2023-04-02 23:07:30
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\config\config.ts
@@ -79,7 +79,7 @@ export default defineConfig({
   webpack5: {},
   chainWebpack(config) {
     config.module
-      .rule()
+      .rule('file')
       .test(/\.(pdf|svg|docx|doc)$/)
       .use('file-loader?name=[path][name].[ext]')
       .loader('file-loader')
