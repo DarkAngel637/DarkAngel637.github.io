@@ -75,19 +75,8 @@ const Welcome: React.FC = () => {
         <Row gutter={24}>
           {localStorage.getItem('username') === '郭俊豪' && (
             <Col span={8}>
-              <Card
-                hoverable
-                cover={
-                  <Image
-                    preview={{ visible: false }}
-                    onClick={() => {
-                      history.push('https://gitee.com/DarkAngel637/Beauty');
-                    }}
-                    src={gitee}
-                  />
-                }
-              >
-                另外的git仓库
+              <Card hoverable cover={<Image preview={{ visible: false }} src={gitee} />}>
+                <a href="https://gitee.com/DarkAngel637/Beauty">另外的git仓库</a>
               </Card>
             </Col>
           )}
