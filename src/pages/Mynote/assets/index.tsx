@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-20 23:31:31
- * @LastEditTime: 2023-04-02 14:19:56
+ * @LastEditTime: 2023-04-02 14:27:39
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\Mynote\assets\index.tsx
@@ -413,8 +413,8 @@
 const data = [];
 for (let index = 1; index <= 200; index++) {
   data.push(
-    `https://cdn.jsdelivr.net/gh/DarkAngel637/darkangel637.github.io@main/src/pages/Mynote/assets/imgs/${index}.jpg`,
-    // `https://raw.githubusercontent.com/DarkAngel637/darkangel637.github.io/main/src/pages/Mynote/assets/imgs/${index}.jpg`,
+    // `https://cdn.jsdelivr.net/gh/DarkAngel637/darkangel637.github.io@main/src/pages/Mynote/assets/imgs/${index}.jpg`,
+    `https://raw.githubusercontent.com/DarkAngel637/darkangel637.github.io/main/src/pages/Mynote/assets/imgs/${index}.jpg`,
   );
 }
 // https://cdn.jsdelivr.net/gh/DarkAngel637/darkangel637.github.io@main/src/pages/Mynote/assets/imgs/3.jpg
