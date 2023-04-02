@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: Dark Angel
  * @Date: 2023-03-31 16:36:20
- * @LastEditTime: 2023-04-01 18:46:31
+ * @LastEditTime: 2023-04-02 19:57:41
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\config\routes.ts
@@ -63,6 +63,12 @@ export default [
     icon: 'DashboardOutlined',
     component: './Mynote',
     path: '/mynote',
+  },
+  {
+    name: 'interview',
+    icon: 'DashboardOutlined',
+    component: './interviewDoc',
+    path: '/interview',
   },
   {
     path: '/',

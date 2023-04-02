@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-31 16:36:20
- * @LastEditTime: 2023-04-01 18:46:16
+ * @LastEditTime: 2023-04-02 19:58:31
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\locales\en-US\menu.ts
@@ -58,4 +58,5 @@ export default {
   'menu.editor.mind': 'Mind Editor',
   'menu.editor.koni': 'Koni Editor',
   'menu.mynote': 'my note',
+  'menu.interview': 'interview',
 };

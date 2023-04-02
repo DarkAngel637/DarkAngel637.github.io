@@ -83,17 +83,26 @@ const Welcome: React.FC = () => {
             </Col>
           )}
           <Col span={8}>
+            {['郭俊豪', '于磊', '杨海光'].includes(localStorage.getItem('username') as string) && (
+              <Card
+                hoverable
+                onClick={() => {
+                  history.push('/mynote');
+                }}
+              >
+                之前的笔记
+              </Card>
+            )}
+          </Col>
+          <Col span={8}>
             <Card
               hoverable
               onClick={() => {
-                history.push('/mynote');
+                history.push('/interview');
               }}
             >
-              之前的笔记
+              面试题
             </Card>
-          </Col>
-          <Col span={8}>
-            <Card hoverable>面试题</Card>
           </Col>
         </Row>
       </Card>

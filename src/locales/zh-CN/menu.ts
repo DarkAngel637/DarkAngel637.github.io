@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-31 16:36:20
- * @LastEditTime: 2023-04-01 18:45:38
+ * @LastEditTime: 2023-04-02 19:59:24
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\locales\zh-CN\menu.ts
@@ -58,4 +58,5 @@ export default {
   'menu.editor.mind': '脑图编辑器',
   'menu.editor.koni': '拓扑编辑器',
   'menu.mynote': '我的笔记',
+  'menu.interview': '面试题',
 };
