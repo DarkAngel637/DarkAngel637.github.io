@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-04-02 13:56:39
+ * @LastEditTime: 2023-04-02 15:31:13
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\Mynote\index.tsx
@@ -60,8 +60,9 @@ export default class CustomTable extends Component {
     });
   }
   render() {
-    const noteArray = Object.entries(data);
+    const noteArray = Object.values(data);
     const { Meta } = Card;
+    const { one, two, three, four, five, six, seven, eight, nine, ten, eleven } = this.state;
     return (
       <PageContainer>
         {/* <Row gutter={24}>
@@ -103,12 +104,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('one', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    console.log(item);
-                    if (index <= 14) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {one
+                    ? noteArray.map((item, index) => {
+                        if (index <= 14) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="html" description="html note" />
@@ -145,11 +147,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('two', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 37 && index >= 15) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {two
+                    ? noteArray.map((item, index) => {
+                        if (index <= 37 && index >= 15) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="css" description="css note" />
@@ -186,11 +190,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('three', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 101 && index >= 38) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {three
+                    ? noteArray.map((item, index) => {
+                        if (index <= 101 && index >= 38) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="javascript" description="javascript note" />
@@ -229,11 +235,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('four', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 105 && index >= 102) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {four
+                    ? noteArray.map((item, index) => {
+                        if (index <= 105 && index >= 102) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="requirejs" description="requirejs note" />
@@ -270,11 +278,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('five', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 124 && index >= 106) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {five
+                    ? noteArray.map((item, index) => {
+                        if (index <= 124 && index >= 106) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="moile" description="moile note" />
@@ -310,11 +320,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('six', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 137 && index >= 125) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {six
+                    ? noteArray.map((item, index) => {
+                        if (index <= 137 && index >= 125) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="nodejs" description="nodejs note" />
@@ -353,11 +365,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('seven', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 149 && index >= 138) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {seven
+                    ? noteArray.map((item, index) => {
+                        if (index <= 149 && index >= 138) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="vuejs" description="vuejs note" />
@@ -394,11 +408,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('eight', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 161 && index >= 150) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {eight
+                    ? noteArray.map((item, index) => {
+                        if (index <= 161 && index >= 150) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="react" description="react note" />
@@ -435,11 +451,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('nine', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 171 && index >= 162) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {nine
+                    ? noteArray.map((item, index) => {
+                        if (index <= 171 && index >= 162) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="typescript" description="typescript note" />
@@ -478,11 +496,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('ten', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 186 && index >= 172) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {ten
+                    ? noteArray.map((item, index) => {
+                        if (index <= 186 && index >= 172) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="nodejs pro" description="nodejs note pro" />
@@ -519,11 +539,13 @@ export default class CustomTable extends Component {
                     onVisibleChange: (vis) => this.handleVisibleChange('eleven', vis),
                   }}
                 >
-                  {noteArray.map((item, index) => {
-                    if (index <= 200 && index >= 187) {
-                      return <Image src={item[1]} />;
-                    }
-                  })}
+                  {eleven
+                    ? noteArray.map((item, index) => {
+                        if (index <= 200 && index >= 187) {
+                          return <Image src={item} />;
+                        }
+                      })
+                    : null}
                 </Image.PreviewGroup>
               </div>
               <Meta title="prictice" description="prictice note" />
