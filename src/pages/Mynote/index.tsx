@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-03-22 01:11:01
- * @LastEditTime: 2023-04-02 15:31:13
+ * @LastEditTime: 2023-04-02 16:03:17
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\Mynote\index.tsx
@@ -42,6 +42,7 @@ export default class CustomTable extends Component {
       nine: false,
       ten: false,
       eleven: false,
+      noArray: Object.values(data),
     };
   }
   // componentDidMount() {
@@ -60,7 +61,7 @@ export default class CustomTable extends Component {
     });
   }
   render() {
-    const noteArray = Object.values(data);
+    const noteArray = this.state.noArray;
     const { Meta } = Card;
     const { one, two, three, four, five, six, seven, eight, nine, ten, eleven } = this.state;
     return (
