@@ -77,7 +77,9 @@ export default () => {
           onCancel={() => {
             setOpen(false);
             setFileMessage({
-              filePath:'', fileTitle:'', fileType:''
+              filePath: '',
+              fileTitle: '',
+              fileType: '',
             });
           }}
         />
