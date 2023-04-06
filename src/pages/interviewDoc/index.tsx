@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-04-02 19:51:26
- * @LastEditTime: 2023-04-06 11:07:07
+ * @LastEditTime: 2023-04-06 11:38:59
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\interviewDoc\index.tsx
@@ -10,7 +10,7 @@ import React, { useState } from 'react';
 import { PageContainer } from '@ant-design/pro-layout';
 import { Table, Card, Button } from 'antd';
 import PreviewModal from './PreviewModal';
-import fileDoc from '@/pages/interviewDoc/assets/interview.docx'; // dddd
+import fileDoc from '@/pages/interviewDoc/assets/interview.docx';
 
 export interface fileMeassageType {
   fileType: string;
