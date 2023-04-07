@@ -2146,6 +2146,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@stackblitz/sdk@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.npmmirror.com/@stackblitz/sdk/-/sdk-1.9.0.tgz#b5174f3f45a51b6c1b9e67f1ef4e2e783ab105e9"
+  integrity sha512-3m6C7f8pnR5KXys/Hqx2x6ylnpqOak6HtnZI6T5keEO0yT+E4Spkw37VEbdwuC+2oxmjdgq6YZEgiKX7hM1GmQ==
+
 "@stylelint/postcss-css-in-js@^0.37.2":
   version "0.37.3"
   resolved "https://registry.npmmirror.com/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.3.tgz#d149a385e07ae365b0107314c084cb6c11adbf49"
