@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-04-08 01:15:01
- * @LastEditTime: 2023-04-08 03:08:41
+ * @LastEditTime: 2023-04-09 17:05:42
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\codesandbox\index.tsx
@@ -26,14 +26,14 @@ export default class CodeSandBox extends React.Component<Props, State> {
         <Card>
           <Button
             onClick={() => {
-              sdk.openProjectId('css-custom-prop-color-values', {
-                newWindow: false,
-                view: 'preview',
-              });
+              // sdk.openProjectId('css-custom-prop-color-values', {
+              //   newWindow: false,
+              //   view: 'preview',
+              // });
             }}
             type="primary"
           >
-            Click Me
+            dva 的使用
           </Button>
           <Button
             onClick={() => {
