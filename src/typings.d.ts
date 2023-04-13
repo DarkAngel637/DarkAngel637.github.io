@@ -1,3 +1,11 @@
+/*
+ * @Author: Dark Angel
+ * @Date: 2023-03-31 16:36:20
+ * @LastEditTime: 2023-04-13 17:53:20
+ * @LastEditors: Dark Angel
+ * @Description: 干就完事了!
+ * @FilePath: \DarkAngel637.github.io\src\typings.d.ts
+ */
 declare module 'slash2';
 declare module '*.css';
 declare module '*.less';
@@ -17,6 +25,7 @@ declare module 'mockjs';
 declare module 'react-fittext';
 declare module 'bizcharts-plugin-slider';
 declare module '*.docx';
+declare module '*.pdf';
 
 // preview.pro.ant.design only do not use in your production ;
 // preview.pro.ant.design Dedicated environment variable, please do not use it in your project.

@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: Dark Angel
  * @Date: 2023-03-31 16:36:20
- * @LastEditTime: 2023-04-08 01:27:13
+ * @LastEditTime: 2023-04-13 18:25:11
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\config\routes.ts
@@ -72,7 +72,7 @@ export default [
   },
   {
     name: 'codesandbox',
-    icon: 'DashboardOutlined',
+    icon: 'CodepenOutlined',
     component: './codesandbox',
     path: '/codesandbox',
   },
