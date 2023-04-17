@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-04-02 19:51:26
- * @LastEditTime: 2023-04-17 16:38:20
+ * @LastEditTime: 2023-04-17 17:35:09
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\interviewDoc\index.tsx
@@ -24,6 +24,9 @@ import oneHontriedti from '@/pages/interviewDoc/assets/100ti.pdf';
 import ali1 from '@/pages/interviewDoc/assets/ali1.pdf';
 import ali2 from '@/pages/interviewDoc/assets/ali2.pdf';
 import frontendxiulian from '@/pages/interviewDoc/assets/frontendxiulian.pdf';
+import algorithm1 from '@/pages/interviewDoc/assets/超全算法笔试-模拟题精解合集.pdf';
+import interview1 from '@/pages/interviewDoc/assets/高频前端面试题.pdf';
+import interview2 from '@/pages/interviewDoc/assets/前端工程师面试题合集.pdf';
 
 export interface fileMeassageType {
   fileType: string;
@@ -120,6 +123,24 @@ export default () => {
       fileTitle: '2023前端王修炼手册',
       fileType: 'pdf',
       filePath: frontendxiulian,
+    },
+    {
+      key: '15',
+      fileTitle: '超全算法笔试-模拟题精解合集',
+      fileType: 'pdf',
+      filePath: algorithm1,
+    },
+    {
+      key: '16',
+      fileTitle: '高频前端面试题',
+      fileType: 'pdf',
+      filePath: interview1,
+    },
+    {
+      key: '17',
+      fileTitle: '前端工程师面试题合集',
+      fileType: 'pdf',
+      filePath: interview2,
     },
   ];
 
