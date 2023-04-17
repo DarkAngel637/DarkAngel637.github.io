@@ -1,7 +1,7 @@
 /*
  * @Author: Dark Angel
  * @Date: 2023-04-02 19:51:26
- * @LastEditTime: 2023-04-13 22:36:42
+ * @LastEditTime: 2023-04-17 16:38:20
  * @LastEditors: Dark Angel
  * @Description: 干就完事了!
  * @FilePath: \DarkAngel637.github.io\src\pages\interviewDoc\index.tsx
@@ -21,6 +21,9 @@ import improve from '@/pages/interviewDoc/assets/improve.pdf';
 import review from '@/pages/interviewDoc/assets/review.pdf';
 import simple from '@/pages/interviewDoc/assets/simple.pdf';
 import oneHontriedti from '@/pages/interviewDoc/assets/100ti.pdf';
+import ali1 from '@/pages/interviewDoc/assets/ali1.pdf';
+import ali2 from '@/pages/interviewDoc/assets/ali2.pdf';
+import frontendxiulian from '@/pages/interviewDoc/assets/frontendxiulian.pdf';
 
 export interface fileMeassageType {
   fileType: string;
@@ -99,6 +102,24 @@ export default () => {
       fileTitle: '大厂面试高频100题',
       fileType: 'pdf',
       filePath: oneHontriedti,
+    },
+    {
+      key: '12',
+      fileTitle: '阿里前端面试题（第一期）',
+      fileType: 'pdf',
+      filePath: ali1,
+    },
+    {
+      key: '13',
+      fileTitle: '阿里前端面试题（第二期）',
+      fileType: 'pdf',
+      filePath: ali2,
+    },
+    {
+      key: '14',
+      fileTitle: '2023前端王修炼手册',
+      fileType: 'pdf',
+      filePath: frontendxiulian,
     },
   ];
 
